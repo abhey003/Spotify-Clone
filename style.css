@@ -1,0 +1,186 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    padding-bottom: 60px;
+}
+
+header {
+    background: #1db954;
+}
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between logo and title */
+}
+
+
+#music-library, #playlists {
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 25px;
+}
+
+h2, h3 {
+    border-bottom: 2px solid #1db954;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#songs .list-group-item, #playlist-songs-container .list-group-item {
+    background-color: #383838;
+    border: none;
+    color: #b3b3b3;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between content */
+    padding: 10px;
+}
+
+#songs .list-group-item:hover, #playlist-songs-container .list-group-item:hover {
+    background-color: #1db954;
+    color: #ffffff;
+}
+
+#playlist-container .playlist-item {
+    background: #404040;
+    padding: 10px;
+    border: 1px solid #606060;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+#playlist-container .playlist-item:hover {
+    background: #1db954;
+    color: #ffffff; 
+}
+
+footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 15%;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column; 
+}
+
+footer .text-center {
+    margin: 0 15px; 
+}
+
+footer span {
+    font-size: 0.9rem; 
+    margin-top: 5px; 
+}
+
+footer .btn {
+    border-radius: 40%;
+    width: 45px; 
+    height: 35px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #1db954; 
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s; 
+    padding: 0;
+}
+
+footer .btn:hover {
+    background-color: #1aa34a; 
+    transform: translateY(-2px); 
+}
+
+footer .btn:active {
+    transform: translateY(1px); 
+}
+
+audio {
+    width: 60%;
+    max-width: 600px;
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 30%;
+}
+
+.btn-add-to-playlist {
+    width: 150px; /* Set a fixed width */
+    text-align: center; /* Center the text */
+    margin-left: auto; /* Push to the right */
+}
+
+#loading-message {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

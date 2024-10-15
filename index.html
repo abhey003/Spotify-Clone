@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center p-4 d-flex align-items-center justify-content-center">
+        <img src="img/Spotify_Primary_Logo_RGB_Green.png" alt="App Logo" class="logo">
+        <h1 class="ml-2">Spotify</h1>
+    </header>
+    
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <input type="text" id="search-input" class="form-control" placeholder="Search for songs..." oninput="searchSongs()">
+                </div>
+                
+                <section id="music-library" class="mb-4">
+                    <h2 class="text-light">Music Library</h2>
+                    <div id="songs" class="list-group"></div>
+                </section>
+                <section id="song-details" class="text-light mb-4">
+                    <h3>Song Details</h3>
+                    <div id="details"></div>
+                </section>
+                <div id="error-message" class="alert alert-danger d-none"></div>
+            </div>
+            <div class="col-md-4">
+                <section id="playlists">
+                    <h2 class="text-light">Your Playlists</h2>
+                    <div id="playlist-container" class="mb-3"></div>
+                    <form id="playlist-form" class="form-inline">
+                        <input type="text" id="playlist-name" class="form-control mr-2" placeholder="Enter Your Playlist Name" required>
+                        <button type="submit" class="btn btn-success">Create Playlist</button>
+                    </form>
+                    <select id="playlist-select" class="form-control mt-3">
+                        <option value="">Select a Playlist</option>
+                    </select>
+                </section>
+                <section id="playlist-songs" class="mb-4">
+                    <h3 class="text-light">Songs in Playlist</h3>
+                    <div id="playlist-songs-container" class="list-group"></div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="fixed-bottom bg-dark text-white d-flex justify-content-center align-items-center p-2">
+        <div class="text-center mr-3">
+            <button id="prev-btn" class="btn">⏮️</button>
+            <span>Previous</span>
+        </div>
+        <audio id="audio-player" controls></audio>
+        <div class="text-center ml-3">
+            <button id="next-btn" class="btn">⏭️</button>
+            <span>Next</span>
+        </div>
+    </footer>
+         
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
