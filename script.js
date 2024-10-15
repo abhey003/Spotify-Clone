@@ -27,7 +27,7 @@ function hideLoading() {
 async function fetchSongs() {
     showLoading();
     try {
-        const response = await fetch('https://itunes.apple.com/search?term=raj bains&entity=song&limit=100');
+        const response = await fetch('https://itunes.apple.com/search?term=amrinder gill&entity=song&limit=100');
         const data = await response.json();
         songs.push(...data.results.map(song => ({
             title: song.trackName,
